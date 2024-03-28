@@ -1,0 +1,89 @@
+
+input[type=text] {
+	font-family: monospace;
+    width: 240px;
+}
+
+input[name=data-time] {
+    width: 160px;
+}
+
+#time {
+    width: 100px;
+}
+
+.fourierchart {
+    width: 520px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+label[for=showcombined] {
+    color: #4A93FA;
+}
+
+label[for=showparts] {
+    color: #37B610;
+}
+
+label[for=showdiscrete]{
+    color: #E7A020;
+}
+
+.commands {
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    font-size: 11px;
+    background: #eaeaea;
+    color: #333;
+    padding: 1px 4px;
+}
+
+.gradient {
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.theme-dark #canvas {
+    background: #0F2338;
+}
+
+.help {
+    font-family: Verdana;
+    font-size: 12px;
+    position: absolute;
+    background: #fafafa;
+    padding: 5px;
+    color: #333;
+    border: 1px solid #ccc;
+    top: -150px;
+    left: -420px;
+    display: none;
+    width: 400px;
+}
+
+.mrfourier:hover .help {
+    xdisplay: block;
+}
+
+.mrfourier {
+    float: right;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* image from Wikipedia: http://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Joseph_Fourier.jpg/490px-Joseph_Fourier.jpg; */
+    background: url(http://betterexplained.com/examples/fourier/fourier.png);
+    position: relative;
+    top: -24px;
+    left: -3px;
+    background-size: 100%;
+    background-repeat-x: no-repeat;
+    background-position-x: 0px;
+    border-radius: 81px;
+    border: 1px solid #E5E5E5;
+}
